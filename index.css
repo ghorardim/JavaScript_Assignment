@@ -1,0 +1,132 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smotthing: antialiased;
+}
+
+.Container {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 1020px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(240, 230, 246, 255);
+}
+
+.Container .UP {
+    position: fixed;
+    top: 0;
+    z-index: 0;
+    width: 100%;
+    height: 15vh;
+    background-color: rgb(134, 0, 192, 255);
+}
+
+.formClass {
+    top:5%;
+    position: absolute;
+    width: 48%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+/*     border: 1px outset rgb(230, 223, 234,255);*/
+    border-top: 6px solid rgb(206, 92, 255,255);
+    padding: 3% 2%;
+
+}
+
+@media (max-width: 768px) {
+    .formClass {
+        width: 80%;
+    }
+}
+
+.formClass .Question {
+
+    width: 100%;
+}
+
+.formClass .Question h1 {
+    margin-bottom: 5%;
+}
+.formClass .Question p {
+    margin-bottom: 5%;
+    color: red;
+    font-size: smaller;
+}
+
+.formClass .Question b {
+    font-size: x-large;
+    font-weight: 100;
+}
+
+.formClass .Question span {
+    color: red;
+    font-size: 14px;
+}
+
+.formClass .Question  .devName {
+    border: none;
+    width: 70%;
+    padding: 1%;
+    outline: 0;
+    border-bottom: 1px solid rgb(230, 223, 234,255);
+}
+
+.formClass .Question .Details {
+    width: 70%;
+    padding: 1%;
+    outline: 0;
+    border: 1px solid rgb(230, 223, 234,255);
+}
+
+.formClass .Question .actionDiv {
+    margin: 2% 0%;
+}
+.formClass .Question .actionDiv input {
+    width: 20%;
+    height: 10%;
+    padding: 2% 3%;
+    border-radius: 2%;
+    font-size: 15px;
+    margin: 0% 2%;
+    outline: 0;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+.formClass .Question .actionDiv .SubmitBtn {
+   /*  background-color: rgb(94, 106, 248,255); */
+    background-color: rgb(134, 0, 192, 255);
+}
+
+.formClass .Question .actionDiv .ResetBtn {
+    background-color: tomato;
+}
+
+
+.formClass .Divider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.formClass .Divider .middleLine {
+    border-left: 1px solid black;
+    height: 300px;
+}
+
+.formClass .Divider .leftLine,
+.formClass .Divider .rightLine {
+    border-left: 1px solid black;
+    height: 250px;
+    margin: 20px;
+}

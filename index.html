@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+</head>
+
+<body>
+
+    <div class="Container">
+        <div class="UP"></div>
+        <div class="formClass">
+            <div id="mainDivID" class="Question">
+                <h1>Developer Survey</h1>
+                <p>* Required</p>
+                <label><b>Enter your name</b> <span>*</span> <br> <input type="text" name="devName" value=""
+                        id='devNameID' class="devName" /></label> <br>
+                <br><br>
+                <label><b>Choose your interest</b> <span>*</span><br><br>
+                    <div id="interestID">
+
+                    </div>
+
+                </label> <br> <br>
+                <label><b>Choose your skills </b> <span>*</span><br><br><label id="skills" />
+                </label><br> <br>
+                <label><b>Describe your skills</b> <span>*</span><br><br><textarea name="" id="detailsID" cols="30"
+                        rows="10" class="Details"></textarea>
+                </label>
+                <div class="actionDiv">
+                    <input type="button" value="Submit" name='submit' onclick="handleSubmit()" class="SubmitBtn"
+                        id="submitBtnID">
+                    <input type="button" value="Reset" name='reset' onclick="handleReset()" class="ResetBtn"
+                        id="resetBtnID">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./index.js"></script>
+
+</html>
